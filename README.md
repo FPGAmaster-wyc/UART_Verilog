@@ -2,7 +2,7 @@
 UART协议发送接收，UART发送数据格式
 
 ## UART_TX框图：
-![alt text](image-2.png)
+![alt text](./png/image-2.png)
 
 
 ## UART_TX状态转移图：
