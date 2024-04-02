@@ -61,7 +61,7 @@ module uart_tx #(
 
 ///////////////////* 时钟波特率计算 *//////////////////////////////
     assign tx_en = (div_cnt == BPS_CNT - 1);
-    always @(posedge i_clk, negedge i_reset) begin
+    always @(posedge i_clk, posedge i_reset) begin
         if (i_reset)
             div_cnt <= 'b0;
         else if (tx_en)
